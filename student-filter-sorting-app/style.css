@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color:#f3e5f5;
+    text-align: center;
+}
+h1{
+    font-size: 3em;
+    color: red;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+select,input[type="number"]{
+    padding: 8px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+button{
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    margin: 5px;
+    margin-top: 10px;
+}
+button#filter-btn{
+    background-color: #007bff;
+}
+button:hover{
+    opacity: 0.9;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 50px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    cursor: pointer;
+    background-color: #cad9f8;
+}
+
+.highlight {
+    background-color: #ffebcd;
+}

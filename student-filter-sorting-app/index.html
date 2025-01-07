@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Filter & Sort Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Student Details</h1>
+    <div>
+        <label for="subject">Select Subject: </label>
+        <select id="subject">
+            <option value="english">English</option>
+            <option value="maths">Maths</option>
+            <option value="science">Science</option>
+            <option value="social_science">Social Science</option>
+        </select>
+    </div>
+    <div>
+        <label><input type="radio" name="filter" value="above" checked> Above</label>
+        <label><input type="radio" name="filter" value="below"> Below</label>
+        <label><input type="radio" name="filter" value="between"> Between</label>
+    </div>
+    <div>
+        <input type="number" id="value1" placeholder="Enter the value">
+        <input type="number" id="value2" placeholder="Enter second value" style="display: none;">
+    </div>
+    <button id="filter-btn">Filter</button>
+    <button id="clear-btn">Clear</button>
+
+    <table id="student-table">
+        <thead>
+            <tr>
+                <th data-column="id">S.No</th>
+                <th data-column="name">Name</th>
+                <th data-column="english">English</th>
+                <th data-column="maths">Maths</th>
+                <th data-column="science">Science</th>
+                <th data-column="social_science">Social Science</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
